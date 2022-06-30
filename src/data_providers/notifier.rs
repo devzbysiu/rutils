@@ -1,6 +1,8 @@
 use crate::error::Result;
 use crate::use_cases::notifier::Notifier;
 
+use dotenv_codegen::dotenv;
+
 pub struct IftttNotifier;
 
 impl Notifier for IftttNotifier {
@@ -15,6 +17,6 @@ impl Notifier for IftttNotifier {
 }
 
 fn ifttt_url() -> String {
-    let key = env!("IFTTT_KEY");
+    let key = dotenv!("IFTTT_KEY");
     format!("https://maker.ifttt.com/trigger/notify/with/key/{}", key)
 }
