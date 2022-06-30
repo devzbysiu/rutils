@@ -1,3 +1,3 @@
 pub trait Notifier {
-    fn notify(&self, msg: String);
+    fn notify(&self, msg: &str);
 }
