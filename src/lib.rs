@@ -10,7 +10,7 @@ pub fn notify<S: Into<String>>(msg: S) -> Result<()> {
     let notifiers = get_notifiers();
     let msg = msg.into();
     for notifier in notifiers {
-        notifier.notify(&msg);
+        notifier.notify(&msg)?;
     }
     Ok(())
 }
