@@ -8,3 +8,6 @@ pub mod notifier;
 
 #[cfg(feature = "daemon")]
 pub mod daemon;
+
+#[cfg(feature = "schedule")]
+pub mod schedule;
