@@ -1,13 +1,11 @@
-use crate::error::Result;
-
 use clokwerk::{Scheduler, TimeUnits};
-use log::{debug, error, info};
+use log::{debug, info};
 use std::thread;
 use std::time::Duration;
 
-pub fn schedule<F>(schedule: &[String], mut fun: F) -> !
+pub fn schedule<F>(schedule: &[String], fun: F) -> !
 where
-    F: 'static + FnMut() -> Result<()> + Send,
+    F: 'static + FnMut() + Send,
 {
     let mut scheduler = Scheduler::new();
     let first_hour = schedule
@@ -21,10 +19,7 @@ where
             job = job.and_every(1.day()).at(time);
         }
     }
-    job.run(move || match fun() {
-        Ok(_) => {}
-        Err(e) => error!("failed to run fun in scheduler: {}", e),
-    });
+    job.run(fun);
     debug!("starting scheduler");
     run(&mut scheduler);
 }

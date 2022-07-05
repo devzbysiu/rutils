@@ -1,6 +1,8 @@
+#![allow(clippy::missing_errors_doc)]
+
 mod configuration;
 mod data_providers;
-mod error;
+pub mod error;
 mod use_cases;
 
 #[cfg(feature = "notifier")]
@@ -9,5 +11,5 @@ pub mod notifier;
 #[cfg(feature = "daemon")]
 pub mod daemon;
 
-#[cfg(feature = "schedule")]
-pub mod schedule;
+#[cfg(feature = "scheduler")]
+pub mod scheduler;

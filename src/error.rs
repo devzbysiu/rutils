@@ -1,5 +1,6 @@
 use thiserror::Error;
 
+#[allow(clippy::module_name_repetitions, clippy::large_enum_variant)]
 #[derive(Debug, Error)]
 pub enum RutilsError {
     #[error("Ureq error")]

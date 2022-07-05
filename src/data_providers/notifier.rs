@@ -3,6 +3,7 @@ use crate::use_cases::notifier::Notifier;
 
 use dotenv_codegen::dotenv;
 
+#[allow(clippy::module_name_repetitions)]
 pub struct IftttNotifier;
 
 impl Notifier for IftttNotifier {

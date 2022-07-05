@@ -38,8 +38,8 @@ thiserror = "1.0.31"
 ureq = { version = "2.4.0", features = ["json"], optional = true }
 
 [features]
-default = ["notifier", "daemon", "schedule"]
+default = ["notifier", "daemon", "scheduler"]
 notifier = ["dep:ureq"]
 daemon = ["dep:daemonize"]
-schedule = ["dep:clokwerk"]
+scheduler = ["dep:clokwerk"]
 
