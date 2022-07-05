@@ -3,5 +3,8 @@ mod data_providers;
 mod error;
 mod use_cases;
 
-#[cfg(feature = "notifications")]
+#[cfg(feature = "notifier")]
 pub mod notifier;
+
+#[cfg(feature = "daemon")]
+pub mod daemon;
