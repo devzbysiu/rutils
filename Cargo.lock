@@ -216,18 +216,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "notifeye"
-version = "0.1.0"
-dependencies = [
- "dotenv",
- "dotenv_codegen",
- "log",
- "pretty_env_logger",
- "thiserror",
- "ureq",
-]
-
-[[package]]
 name = "once_cell"
 version = "1.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -322,6 +310,18 @@ dependencies = [
  "ring",
  "sct",
  "webpki",
+]
+
+[[package]]
+name = "rutils"
+version = "0.1.0"
+dependencies = [
+ "dotenv",
+ "dotenv_codegen",
+ "log",
+ "pretty_env_logger",
+ "thiserror",
+ "ureq",
 ]
 
 [[package]]
