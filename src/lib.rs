@@ -13,3 +13,6 @@ pub mod daemon;
 
 #[cfg(feature = "scheduler")]
 pub mod scheduler;
+
+#[cfg(feature = "file_logger")]
+pub mod file_logger;

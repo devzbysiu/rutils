@@ -8,6 +8,9 @@ pub enum RutilsError {
 
     #[error("IO Error")]
     IoError(#[from] std::io::Error),
+
+    #[error("FlexiLogger error")]
+    FileLoggerError(#[from] flexi_logger::FlexiLoggerError),
 }
 
 pub type Result<T> = std::result::Result<T, RutilsError>;
