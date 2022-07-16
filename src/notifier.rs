@@ -1,4 +1,4 @@
-use crate::configuration::factories::get_notifiers;
+use crate::configuration::factories::notifier::get_notifiers;
 use crate::error::Result;
 
 pub fn notify<S: Into<String>>(msg: S) -> Result<()> {
