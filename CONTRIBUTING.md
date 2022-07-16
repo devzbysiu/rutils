@@ -1,6 +1,6 @@
 # Contribution guidelines
 
-First off, thank you for considering contributing to notifeye.
+First off, thank you for considering contributing to rutils.
 
 If your contribution is not straightforward, please first discuss the change you
 wish to make by creating a new issue before making the change.
@@ -11,10 +11,10 @@ possible.
 
 ## Reporting issues
 
-Issues have to be reported on our [issues tracker](https://github.com/{[username]}/notifeye/issues). Please:
+Issues have to be reported on our [issues tracker](https://github.com/{[username]}/rutils/issues). Please:
 
 - Check that the issue has not already been reported.
-  - This can be achieved by searching keywords on the [issues tracker](https://github.com/{[username]}/notifeye/issues).
+  - This can be achieved by searching keywords on the [issues tracker](https://github.com/{[username]}/rutils/issues).
 - Try to use a clear title, and describe your problem with complete sentences.
 
 ## Pull requests
@@ -47,8 +47,8 @@ If the required subsection does not exist yet under **Unreleased**, create it!
 This is no different than other Rust projects.
 
 ```shell
-git clone https://github.com/{[username]}/notifeye
-cd notifeye
+git clone https://github.com/{[username]}/rutils
+cd rutils
 cargo build
 ```
 

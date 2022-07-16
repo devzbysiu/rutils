@@ -1,31 +1,24 @@
 <div align="center">
 
-  <h1><code>notifeye</code></h1>
+  <h1><code>rutils</code></h1>
 
   <h3>
-    <strong>CHANGEME</strong>
+    <strong>Small lib with common utilities</strong>
   </h3>
 
   <p>
-   <img src="https://github.com/devzbysiu/notifeye/workflows/ci/badge.svg" alt="CI status
+   <img src="https://github.com/devzbysiu/rutils/workflows/ci/badge.svg" alt="CI status
     badge" />
-    <a href="https://codecov.io/gh/devzbysiu/notifeye">
-      <img src="https://img.shields.io/codecov/c/github/devzbysiu/notifeye?style=for-the-badge&token=f2339b3de9e44be0a902458a669c1160" alt="Code coverage"/>
+    <a href="https://codecov.io/gh/devzbysiu/rutils">
+      <img src="https://img.shields.io/codecov/c/github/devzbysiu/rutils?style=for-the-badge&token=f2339b3de9e44be0a902458a669c1160" alt="Code coverage"/>
     </a>
-    <a href="https://crates.io/crates/notifeye">
-      <img src="https://img.shields.io/crates/l/notifeye?style=for-the-badge" alt="License"/>
-    </a>
-    <a href="https://docs.rs/notifeye">
-      <img src="https://img.shields.io/badge/docs-latest-blue.svg?style=for-the-badge" alt="docs.rs docs" />
-    </a>
+    <img src="https://img.shields.io/badge/license-MIT%2FAPACHE--2.0-blue?style=for-the-badge" alt="License"/>
   </p>
 
   <h3>
     <a href="#about">About</a>
     <span> | </span>
     <a href="#installation">Installation</a>
-    <span> | </span>
-    <a href="#configuration">Configuration</a>
     <span> | </span>
     <a href="#license">License</a>
     <span> | </span>
@@ -37,15 +30,15 @@
 
 # <p id="about">About</p>
 
-## --- TODO ---
+This is small library which I'm using in my projects. It's still in progress. **I don't recommend using it in production**.
 
 # <p id="installation">Installation</p>
 
-## --- TODO ---
-
-# <p id="configuration">Configuration</p>
-
-## --- TODO ---
+Add as a dependency to your `Cargo.toml`:
+```toml
+[dependencies]
+rutils = { git = "https://github.com/devzbysiu/rutils" }
+```
 
 # <p id="license">License</p>
 
