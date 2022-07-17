@@ -1,2 +1,2 @@
-#[cfg(feature = "notifier")]
+#[cfg(feature = "ifttt_notifier")]
 pub mod notifier;

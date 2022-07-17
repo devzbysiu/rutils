@@ -5,8 +5,8 @@ mod data_providers;
 pub mod error;
 mod use_cases;
 
-#[cfg(feature = "notifier")]
-pub mod notifier;
+#[cfg(feature = "ifttt_notifier")]
+pub mod ifttt_notifier;
 
 #[cfg(feature = "daemon")]
 pub mod daemon;
