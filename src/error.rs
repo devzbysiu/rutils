@@ -7,6 +7,10 @@ pub enum RutilsError {
     #[cfg(feature = "ifttt_notifier")]
     UreqError(#[from] ureq::Error),
 
+    #[cfg(feature = "desktop_notifier")]
+    #[error("Desktop notification error")]
+    NotifierError(#[from] notify_rust::error::Error),
+
     #[error("IO Error")]
     IoError(#[from] std::io::Error),
 

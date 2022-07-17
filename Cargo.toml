@@ -35,13 +35,15 @@ dotenv = "0.15.0"
 dotenv_codegen = "0.15.0"
 flexi_logger = { version = "0.22.5", optional = true }
 log = "0.4.17"
+notify-rust = { version = "4.5.8", optional = true }
 pretty_env_logger = "0.4.0"
 thiserror = "1.0.31"
 ureq = { version = "2.4.0", features = ["json"], optional = true }
 
 [features]
-default = ["ifttt_notifier", "daemon", "scheduler", "file_logger"]
+default = ["ifttt_notifier", "desktop_notifier", "daemon", "scheduler", "file_logger"]
 ifttt_notifier = ["dep:ureq"]
+desktop_notifier = ["dep:notify-rust"]
 daemon = ["dep:daemonize"]
 scheduler = ["dep:clokwerk"]
 file_logger = ["dep:flexi_logger", "dep:dirs"]

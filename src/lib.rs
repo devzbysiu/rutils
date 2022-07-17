@@ -1,12 +1,14 @@
 #![allow(clippy::missing_errors_doc)]
 
-mod configuration;
 mod data_providers;
 pub mod error;
 mod use_cases;
 
 #[cfg(feature = "ifttt_notifier")]
 pub mod ifttt_notifier;
+
+#[cfg(feature = "desktop_notifier")]
+pub mod desktop_notifier;
 
 #[cfg(feature = "daemon")]
 pub mod daemon;
