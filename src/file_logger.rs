@@ -1,4 +1,4 @@
-use std::env::current_exe;
+use std::env::{current_exe, var};
 
 use crate::error::Result;
 
@@ -10,8 +10,8 @@ pub fn setup_logger() -> Result<()> {
     let target_dir = dirs::config_dir()
         .expect("failed to read config")
         .join(program_name);
-    // TODO: think about log string below
-    Logger::try_with_str("debug")?
+    let log_str = var("RUST_LOG").unwrap_or_else(|_| "debug".into());
+    Logger::try_with_str(log_str)?
         .log_to_file(FileSpec::default().directory(target_dir))
         .format(detailed_format)
         .rotate(
