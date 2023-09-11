@@ -4,6 +4,10 @@ use thiserror::Error;
 #[derive(Debug, Error)]
 pub enum RutilsError {
     #[error("Ureq error")]
+    #[cfg(feature = "ntfy_notifier")]
+    UreqError(#[from] ureq::Error),
+
+    #[error("Ureq error")]
     #[cfg(feature = "ifttt_notifier")]
     UreqError(#[from] ureq::Error),
 

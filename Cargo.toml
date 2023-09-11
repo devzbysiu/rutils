@@ -41,7 +41,8 @@ thiserror = "1.0.31"
 ureq = { version = "2.4.0", features = ["json"], optional = true }
 
 [features]
-default = ["ifttt_notifier", "desktop_notifier", "daemon", "scheduler", "file_logger"]
+default = ["ntfy_notifier", "ifttt_notifier", "desktop_notifier", "daemon", "scheduler", "file_logger"]
+ntfy_notifier = ["dep:ureq"]
 ifttt_notifier = ["dep:ureq"]
 desktop_notifier = ["dep:notify-rust"]
 daemon = ["dep:daemonize"]
