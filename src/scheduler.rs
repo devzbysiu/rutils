@@ -1,4 +1,4 @@
-use clokwerk::{Scheduler, TimeUnits};
+use clokwerk::{Job, Scheduler, TimeUnits};
 use log::{debug, info};
 use std::thread;
 use std::time::Duration;

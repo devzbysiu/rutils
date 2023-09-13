@@ -28,15 +28,15 @@ homepage = ""
 documentation = ""
 
 [dependencies]
-clokwerk = { version = "0.3.5", optional = true }
-daemonize = { version = "0.4.1", optional = true }
-dirs = { version = "4.0.0", optional = true }
+clokwerk = { version = "0.4.0", optional = true }
+daemonize = { version = "0.5.0", optional = true }
+dirs = { version = "5.0.1", optional = true }
 dotenv = "0.15.0"
 dotenv_codegen = "0.15.0"
-flexi_logger = { version = "0.22.5", optional = true }
+flexi_logger = { version = "0.26.0", optional = true }
 log = "0.4.17"
 notify-rust = { version = "4.5.8", optional = true }
-pretty_env_logger = "0.4.0"
+pretty_env_logger = "0.5.0"
 thiserror = "1.0.31"
 ureq = { version = "2.4.0", features = ["json"], optional = true }
 
