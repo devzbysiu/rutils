@@ -1,8 +1,7 @@
-use std::env::{current_exe, var};
-
 use crate::error::Result;
 
 use flexi_logger::{detailed_format, Age, Cleanup, Criterion, FileSpec, Logger, Naming};
+use std::env::{current_exe, var};
 
 pub fn setup_logger() -> Result<()> {
     let exe_path = current_exe()?;
